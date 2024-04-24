@@ -1,0 +1,185 @@
+.welcome-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../../assets/images/bg-1.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.welcome-text-container {
+    width: 45%;
+    font-family: "Orbitron", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    color: #fff;
+}
+
+.welcome-text-container h2 {
+    font-size: 64px;
+}
+
+.text-decoration {
+    color: #ffbf69;
+}
+
+.welcome-text-container p {
+    font-size: 35px;
+}
+
+.welcome-text-container .links {
+    height: 15vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.links .link-my-universe {
+  font-size: 18px;
+  font-weight: 500;
+  text-decoration: none;
+  padding: 0.7em 2.7em;
+  letter-spacing: 0.06em;
+  position: relative;
+  font-family: inherit;
+  border-radius: 0.6em;
+  overflow: hidden;
+  transition: all 0.3s;
+  line-height: 1.4em;
+  border: 2px solid #3a86ff;
+  background: linear-gradient(to right, #3a85ff26 1%, transparent 40%,transparent 60% , #3a85ff26 100%);
+  color: #fff;
+  box-shadow: inset 0 0 10px #3a85ff26, 0 0 9px 3px #3a85ff26;
+}
+
+.link-my-universe:hover {
+    color: #3a85ff26;
+    box-shadow: inset 0 0 10px #3a85ff95, 0 0 9px 3px #3a85ff26;
+}
+  
+.link-my-universe:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #3a85ff26 40%,#3a85ff26 60% , transparent 100%);
+}
+  
+.link-my-universe:hover:before {
+    transform: translateX(15em);
+}
+
+.links .link-communicate {
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    padding: 0.7em 2.7em;
+    letter-spacing: 0.06em;
+    position: relative;
+    font-family: inherit;
+    border-radius: 0.6em;
+    overflow: hidden;
+    transition: all 0.3s;
+    line-height: 1.4em;
+    border: 2px solid #d90429;
+    background: linear-gradient(to right, #d9042926 1%, transparent 40%,transparent 60% , #d9042926 100%);
+    color: #fff;
+    box-shadow: inset 0 0 10px #d9042926, 0 0 9px 3px #d9042926;
+}
+  
+.link-communicate:hover {
+    color: #d9042926;
+    box-shadow: inset 0 0 10px #d9042995, 0 0 9px 3px #d9042926;
+}
+    
+.link-communicate:before {
+    content: "";
+    position: absolute;
+    left: -4em;
+    width: 4em;
+    height: 100%;
+    top: 0;
+    transition: transform .4s ease-in-out;
+    background: linear-gradient(to right, transparent 1%, #d9042926 40%,#d9042926 60% , transparent 100%);
+}
+    
+.link-communicate:hover:before {
+  transform: translateX(15em);
+}
+  
+
+.welcome-image {
+    width: 25%;
+}
+
+.welcome-image img {
+    width: 100%;
+    object-fit: contain;
+    animation: astronaut-motion infinite linear 5s;
+    -webkit-animation: astronaut-motion infinite linear 5s;
+}
+
+.mouse-btn {
+    margin: 10px auto;
+    width: 40px;
+    height: 80px;
+    border: 3px solid rgba(255, 255, 255, 0.918);
+    border-radius: 20px;
+    display: flex;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  
+.mouse-scroll {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background: linear-gradient(170deg, rgba(239, 239, 239, 0.918), rgb(255, 255, 255));
+    border-radius: 50%;
+    margin: auto;
+    animation: animation-scrolling 1.5s linear infinite;
+    -webkit-animation: animation-scrolling 1.5s linear infinite;
+}
+  
+@keyframes animation-scrolling {
+    0% {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+  
+    100% {
+      opacity: 1;
+      transform: translateY(20px);
+    }
+}
+
+@keyframes astronaut-motion {
+    0% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+}
+    50% {
+        transform: translate(20px, 10px);
+        -webkit-transform: translate(20px, 10px);
+        -moz-transform: translate(20px, 10px);
+        -ms-transform: translate(20px, 10px);
+        -o-transform: translate(20px, 10px);
+}
+    100% {
+        transform: translate(0, 0);
+        -webkit-transform: translate(0, 0);
+        -moz-transform: translate(0, 0);
+        -ms-transform: translate(0, 0);
+        -o-transform: translate(0, 0);
+}
+}

@@ -1,0 +1,98 @@
+nav {
+    width: 100%;
+    padding: 1%;
+    display: flex;
+    position: fixed;
+    justify-content: space-between;
+    font-family: "Share Tech Mono", monospace;
+    font-weight: 400;
+    font-style: normal;
+}
+
+nav h1 {
+    flex: 2;
+    color: #fff;
+}
+
+nav .nav-links {
+    display: flex;
+    justify-content: space-between;
+    flex: 1;
+    list-style: none;
+    font-size: 18px;
+    color: #fff;
+}
+
+
+nav li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 2px 10px;
+}
+
+nav .link-home:hover {
+    border-bottom: 1px solid #c200fb;
+}
+
+nav .link-services:hover {
+    border-bottom: 1px solid #fc2f00;
+}
+
+nav .link-contact:hover {
+    border-bottom: 1px solid #ec7d10;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    padding: 3px 10px;
+}
+
+.dropdown-content {
+    visibility: hidden;
+    opacity: 0;
+    height: 0;
+    list-style-type: none;
+    line-height: 2;
+    transition: all .8s;
+    -webkit-transition: all .8s;
+    -moz-transition: all .8s;
+    -ms-transition: all .8s;
+    -o-transition: all .8s;
+}
+
+.dropdown-content li {
+    width: 100%;
+}
+
+.dropdown-content a {
+    font-size: 16px;
+}
+
+.dropdown:hover {
+    outline: 1px solid #ec0868;
+}
+
+.dropdown:hover .dropdown-content {
+    position: absolute;
+    visibility: visible;
+    opacity: 1;
+    height: auto;
+    width: 100%;
+    background-color: #ec086829;
+}
+
+.dropdown-content .link-myself:hover {
+    border-bottom: 1px solid #ffc300;
+}
+
+.dropdown-content .link-skills:hover {
+    border-bottom: 1px solid #ef233c;
+}
+
+.dropdown-content .link-projects:hover {
+    border-bottom: 1px solid #ff99c8;
+}
