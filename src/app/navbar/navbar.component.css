@@ -7,6 +7,13 @@ nav {
     font-family: "Share Tech Mono", monospace;
     font-weight: 400;
     font-style: normal;
+    z-index: 10;
+    transition: all 1s;
+}
+
+.scrolled {
+    background: #1a94a9;
+    box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 nav h1 {
@@ -31,7 +38,7 @@ nav li a {
 }
 
 nav .link-home:hover {
-    border-bottom: 1px solid #c200fb;
+    border-bottom: 1px solid #1500fb;
 }
 
 nav .link-services:hover {
@@ -49,7 +56,12 @@ nav .link-contact:hover {
 
 .dropbtn {
     padding: 3px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
 }
+
 
 .dropdown-content {
     visibility: hidden;
@@ -73,7 +85,16 @@ nav .link-contact:hover {
 }
 
 .dropdown:hover {
-    outline: 1px solid #ec0868;
+    background-color: #ec0868;
+}
+
+#arrow {
+    transition: all .5s;
+    font-weight: bold;
+}
+
+.dropdown:hover #arrow {
+    transform: rotate(180deg);
 }
 
 .dropdown:hover .dropdown-content {
@@ -82,17 +103,21 @@ nav .link-contact:hover {
     opacity: 1;
     height: auto;
     width: 100%;
-    background-color: #ec086829;
+    background-color: #ec086789;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
 }
 
 .dropdown-content .link-myself:hover {
-    border-bottom: 1px solid #ffc300;
+    background-color: #bd0652;
 }
 
 .dropdown-content .link-skills:hover {
-    border-bottom: 1px solid #ef233c;
+    background-color: #bd0652;
 }
 
 .dropdown-content .link-projects:hover {
-    border-bottom: 1px solid #ff99c8;
+    background-color: #bd0652;
+    border-end-start-radius: 10px;
+    border-end-end-radius: 10px;
 }
